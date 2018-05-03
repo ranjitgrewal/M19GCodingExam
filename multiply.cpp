@@ -5,5 +5,5 @@ int main()
 }
 int multiply(float x, float y)
 {
-    return multiply_in_js(x, y);
+    return  x*y;
 }
