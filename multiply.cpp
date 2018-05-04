@@ -1,9 +1,12 @@
 // multiply.cpp
-int main()
-{
-   std::cout << "initialized";
+#include <emscripten/bind.h>
+
+using namespace emscripten;
+
+float multiply(float a, float b) {
+    return  a * b;
 }
-int multiply(float x, float y)
-{
-    return  x*y;
+
+EMSCRIPTEN_BINDINGS(my_module) {
+    function("multiply", &multiply);
 }
