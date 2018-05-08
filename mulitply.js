@@ -1477,10 +1477,10 @@ var ASM_CONSTS = [];
 STATIC_BASE = GLOBAL_BASE;
 
 STATICTOP = STATIC_BASE + 3888;
-/* global initializers */  __ATINIT__.push({ func: function() { __GLOBAL__sub_I_multiply_cpp() } }, { func: function() { __GLOBAL__sub_I_bind_cpp() } });
+/* global initializers */  __ATINIT__.push({ func: function() { __GLOBAL__sub_I_multiplyV2_cpp() } }, { func: function() { __GLOBAL__sub_I_bind_cpp() } });
 
 
-memoryInitializer = "data:application/octet-stream;base64,FAIAAMsFAAAUAgAA6gUAABQCAAAJBgAAFAIAACgGAAAUAgAARwYAABQCAABmBgAAFAIAAIUGAAAUAgAApAYAABQCAADDBgAAFAIAAOIGAAAUAgAAAQcAABQCAAAgBwAAFAIAAD8HAACAAgAAUgcAAAAAAAABAAAAiAAAAAAAAAAUAgAAkQcAAIACAAC3BwAAAAAAAAEAAACIAAAAAAAAAIACAAD2BwAAAAAAAAEAAACIAAAAAAAAADwCAACICAAA0AAAAAAAAAA8AgAANQgAAOAAAAAAAAAAFAIAAFYIAAA8AgAAYwgAAMAAAAAAAAAAPAIAAKoIAADQAAAAAAAAAGQCAADSCAAAZAIAANQIAABkAgAA1ggAAGQCAADYCAAAZAIAANoIAABkAgAA3AgAAGQCAADeCAAAZAIAAOAIAABkAgAA4ggAAGQCAADkCAAAZAIAAOYIAABkAgAA6AgAAGQCAADqCAAAPAIAAOwIAADAAAAAAAAAAGABAABgAQAAYAEAAAUAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAADAAAAIgsAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAr/////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACMAQAAAAAAAMAAAAAEAAAABQAAAAYAAAAHAAAACAAAAAkAAAAKAAAACwAAAAAAAADoAAAABAAAAAwAAAAGAAAABwAAAAgAAAANAAAADgAAAA8AAAAAAAAA+AAAAAQAAAAQAAAABgAAAAcAAAARAAAAAAAAAHABAAAEAAAAEgAAAAYAAAAHAAAACAAAABMAAAAUAAAAFQAAAG11bHRpcGx5AGZpZmYAdm9pZABib29sAGNoYXIAc2lnbmVkIGNoYXIAdW5zaWduZWQgY2hhcgBzaG9ydAB1bnNpZ25lZCBzaG9ydABpbnQAdW5zaWduZWQgaW50AGxvbmcAdW5zaWduZWQgbG9uZwBmbG9hdABkb3VibGUAc3RkOjpzdHJpbmcAc3RkOjpiYXNpY19zdHJpbmc8dW5zaWduZWQgY2hhcj4Ac3RkOjp3c3RyaW5nAGVtc2NyaXB0ZW46OnZhbABlbXNjcmlwdGVuOjptZW1vcnlfdmlldzxjaGFyPgBlbXNjcmlwdGVuOjptZW1vcnlfdmlldzxzaWduZWQgY2hhcj4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8dW5zaWduZWQgY2hhcj4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8c2hvcnQ+AGVtc2NyaXB0ZW46Om1lbW9yeV92aWV3PHVuc2lnbmVkIHNob3J0PgBlbXNjcmlwdGVuOjptZW1vcnlfdmlldzxpbnQ+AGVtc2NyaXB0ZW46Om1lbW9yeV92aWV3PHVuc2lnbmVkIGludD4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8bG9uZz4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8dW5zaWduZWQgbG9uZz4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8aW50OF90PgBlbXNjcmlwdGVuOjptZW1vcnlfdmlldzx1aW50OF90PgBlbXNjcmlwdGVuOjptZW1vcnlfdmlldzxpbnQxNl90PgBlbXNjcmlwdGVuOjptZW1vcnlfdmlldzx1aW50MTZfdD4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8aW50MzJfdD4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8dWludDMyX3Q+AGVtc2NyaXB0ZW46Om1lbW9yeV92aWV3PGZsb2F0PgBlbXNjcmlwdGVuOjptZW1vcnlfdmlldzxkb3VibGU+AGVtc2NyaXB0ZW46Om1lbW9yeV92aWV3PGxvbmcgZG91YmxlPgBOMTBlbXNjcmlwdGVuMTFtZW1vcnlfdmlld0llRUUATjEwZW1zY3JpcHRlbjExbWVtb3J5X3ZpZXdJZEVFAE4xMGVtc2NyaXB0ZW4xMW1lbW9yeV92aWV3SWZFRQBOMTBlbXNjcmlwdGVuMTFtZW1vcnlfdmlld0ltRUUATjEwZW1zY3JpcHRlbjExbWVtb3J5X3ZpZXdJbEVFAE4xMGVtc2NyaXB0ZW4xMW1lbW9yeV92aWV3SWpFRQBOMTBlbXNjcmlwdGVuMTFtZW1vcnlfdmlld0lpRUUATjEwZW1zY3JpcHRlbjExbWVtb3J5X3ZpZXdJdEVFAE4xMGVtc2NyaXB0ZW4xMW1lbW9yeV92aWV3SXNFRQBOMTBlbXNjcmlwdGVuMTFtZW1vcnlfdmlld0loRUUATjEwZW1zY3JpcHRlbjExbWVtb3J5X3ZpZXdJYUVFAE4xMGVtc2NyaXB0ZW4xMW1lbW9yeV92aWV3SWNFRQBOMTBlbXNjcmlwdGVuM3ZhbEUATlN0M19fMjEyYmFzaWNfc3RyaW5nSXdOU18xMWNoYXJfdHJhaXRzSXdFRU5TXzlhbGxvY2F0b3JJd0VFRUUATlN0M19fMjIxX19iYXNpY19zdHJpbmdfY29tbW9uSUxiMUVFRQBOU3QzX18yMTJiYXNpY19zdHJpbmdJaE5TXzExY2hhcl90cmFpdHNJaEVFTlNfOWFsbG9jYXRvckloRUVFRQBOU3QzX18yMTJiYXNpY19zdHJpbmdJY05TXzExY2hhcl90cmFpdHNJY0VFTlNfOWFsbG9jYXRvckljRUVFRQBOMTBfX2N4eGFiaXYxMTZfX3NoaW1fdHlwZV9pbmZvRQBTdDl0eXBlX2luZm8ATjEwX19jeHhhYml2MTIwX19zaV9jbGFzc190eXBlX2luZm9FAE4xMF9fY3h4YWJpdjExN19fY2xhc3NfdHlwZV9pbmZvRQBOMTBfX2N4eGFiaXYxMjNfX2Z1bmRhbWVudGFsX3R5cGVfaW5mb0UAdgBiAGMAaABhAHMAdABpAGoAbABtAGYAZABOMTBfX2N4eGFiaXYxMjFfX3ZtaV9jbGFzc190eXBlX2luZm9F";
+memoryInitializer = "data:application/octet-stream;base64,FAIAAMsFAAAUAgAA6gUAABQCAAAJBgAAFAIAACgGAAAUAgAARwYAABQCAABmBgAAFAIAAIUGAAAUAgAApAYAABQCAADDBgAAFAIAAOIGAAAUAgAAAQcAABQCAAAgBwAAFAIAAD8HAACAAgAAUgcAAAAAAAABAAAAiAAAAAAAAAAUAgAAkQcAAIACAAC3BwAAAAAAAAEAAACIAAAAAAAAAIACAAD2BwAAAAAAAAEAAACIAAAAAAAAADwCAACICAAA0AAAAAAAAAA8AgAANQgAAOAAAAAAAAAAFAIAAFYIAAA8AgAAYwgAAMAAAAAAAAAAPAIAAKoIAADQAAAAAAAAAGQCAADSCAAAZAIAANQIAABkAgAA1ggAAGQCAADYCAAAZAIAANoIAABkAgAA3AgAAGQCAADeCAAAZAIAAOAIAABkAgAA4ggAAGQCAADkCAAAZAIAAOYIAABkAgAA6AgAAGQCAADqCAAAPAIAAOwIAADAAAAAAAAAAEABAABgAQAAYAEAAAUAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAADAAAAIgsAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAr/////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACMAQAAAAAAAMAAAAAEAAAABQAAAAYAAAAHAAAACAAAAAkAAAAKAAAACwAAAAAAAADoAAAABAAAAAwAAAAGAAAABwAAAAgAAAANAAAADgAAAA8AAAAAAAAA+AAAAAQAAAAQAAAABgAAAAcAAAARAAAAAAAAAHABAAAEAAAAEgAAAAYAAAAHAAAACAAAABMAAAAUAAAAFQAAAG11bHRpcGx5AGlpZmYAdm9pZABib29sAGNoYXIAc2lnbmVkIGNoYXIAdW5zaWduZWQgY2hhcgBzaG9ydAB1bnNpZ25lZCBzaG9ydABpbnQAdW5zaWduZWQgaW50AGxvbmcAdW5zaWduZWQgbG9uZwBmbG9hdABkb3VibGUAc3RkOjpzdHJpbmcAc3RkOjpiYXNpY19zdHJpbmc8dW5zaWduZWQgY2hhcj4Ac3RkOjp3c3RyaW5nAGVtc2NyaXB0ZW46OnZhbABlbXNjcmlwdGVuOjptZW1vcnlfdmlldzxjaGFyPgBlbXNjcmlwdGVuOjptZW1vcnlfdmlldzxzaWduZWQgY2hhcj4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8dW5zaWduZWQgY2hhcj4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8c2hvcnQ+AGVtc2NyaXB0ZW46Om1lbW9yeV92aWV3PHVuc2lnbmVkIHNob3J0PgBlbXNjcmlwdGVuOjptZW1vcnlfdmlldzxpbnQ+AGVtc2NyaXB0ZW46Om1lbW9yeV92aWV3PHVuc2lnbmVkIGludD4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8bG9uZz4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8dW5zaWduZWQgbG9uZz4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8aW50OF90PgBlbXNjcmlwdGVuOjptZW1vcnlfdmlldzx1aW50OF90PgBlbXNjcmlwdGVuOjptZW1vcnlfdmlldzxpbnQxNl90PgBlbXNjcmlwdGVuOjptZW1vcnlfdmlldzx1aW50MTZfdD4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8aW50MzJfdD4AZW1zY3JpcHRlbjo6bWVtb3J5X3ZpZXc8dWludDMyX3Q+AGVtc2NyaXB0ZW46Om1lbW9yeV92aWV3PGZsb2F0PgBlbXNjcmlwdGVuOjptZW1vcnlfdmlldzxkb3VibGU+AGVtc2NyaXB0ZW46Om1lbW9yeV92aWV3PGxvbmcgZG91YmxlPgBOMTBlbXNjcmlwdGVuMTFtZW1vcnlfdmlld0llRUUATjEwZW1zY3JpcHRlbjExbWVtb3J5X3ZpZXdJZEVFAE4xMGVtc2NyaXB0ZW4xMW1lbW9yeV92aWV3SWZFRQBOMTBlbXNjcmlwdGVuMTFtZW1vcnlfdmlld0ltRUUATjEwZW1zY3JpcHRlbjExbWVtb3J5X3ZpZXdJbEVFAE4xMGVtc2NyaXB0ZW4xMW1lbW9yeV92aWV3SWpFRQBOMTBlbXNjcmlwdGVuMTFtZW1vcnlfdmlld0lpRUUATjEwZW1zY3JpcHRlbjExbWVtb3J5X3ZpZXdJdEVFAE4xMGVtc2NyaXB0ZW4xMW1lbW9yeV92aWV3SXNFRQBOMTBlbXNjcmlwdGVuMTFtZW1vcnlfdmlld0loRUUATjEwZW1zY3JpcHRlbjExbWVtb3J5X3ZpZXdJYUVFAE4xMGVtc2NyaXB0ZW4xMW1lbW9yeV92aWV3SWNFRQBOMTBlbXNjcmlwdGVuM3ZhbEUATlN0M19fMjEyYmFzaWNfc3RyaW5nSXdOU18xMWNoYXJfdHJhaXRzSXdFRU5TXzlhbGxvY2F0b3JJd0VFRUUATlN0M19fMjIxX19iYXNpY19zdHJpbmdfY29tbW9uSUxiMUVFRQBOU3QzX18yMTJiYXNpY19zdHJpbmdJaE5TXzExY2hhcl90cmFpdHNJaEVFTlNfOWFsbG9jYXRvckloRUVFRQBOU3QzX18yMTJiYXNpY19zdHJpbmdJY05TXzExY2hhcl90cmFpdHNJY0VFTlNfOWFsbG9jYXRvckljRUVFRQBOMTBfX2N4eGFiaXYxMTZfX3NoaW1fdHlwZV9pbmZvRQBTdDl0eXBlX2luZm8ATjEwX19jeHhhYml2MTIwX19zaV9jbGFzc190eXBlX2luZm9FAE4xMF9fY3h4YWJpdjExN19fY2xhc3NfdHlwZV9pbmZvRQBOMTBfX2N4eGFiaXYxMjNfX2Z1bmRhbWVudGFsX3R5cGVfaW5mb0UAdgBiAGMAaABhAHMAdABpAGoAbABtAGYAZABOMTBfX2N4eGFiaXYxMjFfX3ZtaV9jbGFzc190eXBlX2luZm9F";
 
 
 
@@ -2535,6 +2535,12 @@ function copyTempDouble(ptr) {
 
    
 
+  function _multiply_in_js(x,y) 
+  {		
+      		document.getElementById("output_area").innerHTML += "\n" + "multiplying in js : " + x + "and" + y + "\n" ;
+    		return x* y;
+  }
+
   
   function ___setErrNo(value) {
       if (Module['___errno_location']) HEAP32[((Module['___errno_location']())>>2)]=value;
@@ -2665,11 +2671,11 @@ function tryParseAsDataURI(filename) {
 
 
 
-function nullFunc_ddd(x) { Module["printErr"]("Invalid function pointer called with signature 'ddd'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  Module["printErr"]("Build with ASSERTIONS=2 for more info.");abort(x) }
-
-function nullFunc_didd(x) { Module["printErr"]("Invalid function pointer called with signature 'didd'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  Module["printErr"]("Build with ASSERTIONS=2 for more info.");abort(x) }
+function nullFunc_idd(x) { Module["printErr"]("Invalid function pointer called with signature 'idd'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  Module["printErr"]("Build with ASSERTIONS=2 for more info.");abort(x) }
 
 function nullFunc_ii(x) { Module["printErr"]("Invalid function pointer called with signature 'ii'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  Module["printErr"]("Build with ASSERTIONS=2 for more info.");abort(x) }
+
+function nullFunc_iidd(x) { Module["printErr"]("Invalid function pointer called with signature 'iidd'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  Module["printErr"]("Build with ASSERTIONS=2 for more info.");abort(x) }
 
 function nullFunc_iiii(x) { Module["printErr"]("Invalid function pointer called with signature 'iiii'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  Module["printErr"]("Build with ASSERTIONS=2 for more info.");abort(x) }
 
@@ -2681,18 +2687,9 @@ function nullFunc_viiiii(x) { Module["printErr"]("Invalid function pointer calle
 
 function nullFunc_viiiiii(x) { Module["printErr"]("Invalid function pointer called with signature 'viiiiii'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  Module["printErr"]("Build with ASSERTIONS=2 for more info.");abort(x) }
 
-function invoke_ddd(index,a1,a2) {
+function invoke_idd(index,a1,a2) {
   try {
-    return Module["dynCall_ddd"](index,a1,a2);
-  } catch(e) {
-    if (typeof e !== 'number' && e !== 'longjmp') throw e;
-    Module["setThrew"](1, 0);
-  }
-}
-
-function invoke_didd(index,a1,a2,a3) {
-  try {
-    return Module["dynCall_didd"](index,a1,a2,a3);
+    return Module["dynCall_idd"](index,a1,a2);
   } catch(e) {
     if (typeof e !== 'number' && e !== 'longjmp') throw e;
     Module["setThrew"](1, 0);
@@ -2702,6 +2699,15 @@ function invoke_didd(index,a1,a2,a3) {
 function invoke_ii(index,a1) {
   try {
     return Module["dynCall_ii"](index,a1);
+  } catch(e) {
+    if (typeof e !== 'number' && e !== 'longjmp') throw e;
+    Module["setThrew"](1, 0);
+  }
+}
+
+function invoke_iidd(index,a1,a2,a3) {
+  try {
+    return Module["dynCall_iidd"](index,a1,a2,a3);
   } catch(e) {
     if (typeof e !== 'number' && e !== 'longjmp') throw e;
     Module["setThrew"](1, 0);
@@ -2755,7 +2761,7 @@ function invoke_viiiiii(index,a1,a2,a3,a4,a5,a6) {
 
 Module.asmGlobalArg = { "Math": Math, "Int8Array": Int8Array, "Int16Array": Int16Array, "Int32Array": Int32Array, "Uint8Array": Uint8Array, "Uint16Array": Uint16Array, "Uint32Array": Uint32Array, "Float32Array": Float32Array, "Float64Array": Float64Array, "NaN": NaN, "Infinity": Infinity };
 
-Module.asmLibraryArg = { "abort": abort, "assert": assert, "enlargeMemory": enlargeMemory, "getTotalMemory": getTotalMemory, "abortOnCannotGrowMemory": abortOnCannotGrowMemory, "abortStackOverflow": abortStackOverflow, "nullFunc_ddd": nullFunc_ddd, "nullFunc_didd": nullFunc_didd, "nullFunc_ii": nullFunc_ii, "nullFunc_iiii": nullFunc_iiii, "nullFunc_vi": nullFunc_vi, "nullFunc_viiii": nullFunc_viiii, "nullFunc_viiiii": nullFunc_viiiii, "nullFunc_viiiiii": nullFunc_viiiiii, "invoke_ddd": invoke_ddd, "invoke_didd": invoke_didd, "invoke_ii": invoke_ii, "invoke_iiii": invoke_iiii, "invoke_vi": invoke_vi, "invoke_viiii": invoke_viiii, "invoke_viiiii": invoke_viiiii, "invoke_viiiiii": invoke_viiiiii, "__ZSt18uncaught_exceptionv": __ZSt18uncaught_exceptionv, "___cxa_find_matching_catch": ___cxa_find_matching_catch, "___gxx_personality_v0": ___gxx_personality_v0, "___lock": ___lock, "___resumeException": ___resumeException, "___setErrNo": ___setErrNo, "___syscall140": ___syscall140, "___syscall146": ___syscall146, "___syscall54": ___syscall54, "___syscall6": ___syscall6, "___unlock": ___unlock, "__embind_register_bool": __embind_register_bool, "__embind_register_emval": __embind_register_emval, "__embind_register_float": __embind_register_float, "__embind_register_function": __embind_register_function, "__embind_register_integer": __embind_register_integer, "__embind_register_memory_view": __embind_register_memory_view, "__embind_register_std_string": __embind_register_std_string, "__embind_register_std_wstring": __embind_register_std_wstring, "__embind_register_void": __embind_register_void, "__emval_decref": __emval_decref, "__emval_register": __emval_register, "_embind_repr": _embind_repr, "_emscripten_memcpy_big": _emscripten_memcpy_big, "count_emval_handles": count_emval_handles, "craftInvokerFunction": craftInvokerFunction, "createNamedFunction": createNamedFunction, "embind__requireFunction": embind__requireFunction, "embind_init_charCodes": embind_init_charCodes, "ensureOverloadTable": ensureOverloadTable, "exposePublicSymbol": exposePublicSymbol, "extendError": extendError, "floatReadValueFromPointer": floatReadValueFromPointer, "flush_NO_FILESYSTEM": flush_NO_FILESYSTEM, "getShiftFromSize": getShiftFromSize, "getTypeName": getTypeName, "get_first_emval": get_first_emval, "heap32VectorToArray": heap32VectorToArray, "init_emval": init_emval, "integerReadValueFromPointer": integerReadValueFromPointer, "makeLegalFunctionName": makeLegalFunctionName, "new_": new_, "readLatin1String": readLatin1String, "registerType": registerType, "replacePublicSymbol": replacePublicSymbol, "runDestructors": runDestructors, "simpleReadValueFromPointer": simpleReadValueFromPointer, "throwBindingError": throwBindingError, "throwInternalError": throwInternalError, "throwUnboundTypeError": throwUnboundTypeError, "whenDependentTypesAreResolved": whenDependentTypesAreResolved, "DYNAMICTOP_PTR": DYNAMICTOP_PTR, "tempDoublePtr": tempDoublePtr, "ABORT": ABORT, "STACKTOP": STACKTOP, "STACK_MAX": STACK_MAX };
+Module.asmLibraryArg = { "abort": abort, "assert": assert, "enlargeMemory": enlargeMemory, "getTotalMemory": getTotalMemory, "abortOnCannotGrowMemory": abortOnCannotGrowMemory, "abortStackOverflow": abortStackOverflow, "nullFunc_idd": nullFunc_idd, "nullFunc_ii": nullFunc_ii, "nullFunc_iidd": nullFunc_iidd, "nullFunc_iiii": nullFunc_iiii, "nullFunc_vi": nullFunc_vi, "nullFunc_viiii": nullFunc_viiii, "nullFunc_viiiii": nullFunc_viiiii, "nullFunc_viiiiii": nullFunc_viiiiii, "invoke_idd": invoke_idd, "invoke_ii": invoke_ii, "invoke_iidd": invoke_iidd, "invoke_iiii": invoke_iiii, "invoke_vi": invoke_vi, "invoke_viiii": invoke_viiii, "invoke_viiiii": invoke_viiiii, "invoke_viiiiii": invoke_viiiiii, "__ZSt18uncaught_exceptionv": __ZSt18uncaught_exceptionv, "___cxa_find_matching_catch": ___cxa_find_matching_catch, "___gxx_personality_v0": ___gxx_personality_v0, "___lock": ___lock, "___resumeException": ___resumeException, "___setErrNo": ___setErrNo, "___syscall140": ___syscall140, "___syscall146": ___syscall146, "___syscall54": ___syscall54, "___syscall6": ___syscall6, "___unlock": ___unlock, "__embind_register_bool": __embind_register_bool, "__embind_register_emval": __embind_register_emval, "__embind_register_float": __embind_register_float, "__embind_register_function": __embind_register_function, "__embind_register_integer": __embind_register_integer, "__embind_register_memory_view": __embind_register_memory_view, "__embind_register_std_string": __embind_register_std_string, "__embind_register_std_wstring": __embind_register_std_wstring, "__embind_register_void": __embind_register_void, "__emval_decref": __emval_decref, "__emval_register": __emval_register, "_embind_repr": _embind_repr, "_emscripten_memcpy_big": _emscripten_memcpy_big, "_multiply_in_js": _multiply_in_js, "count_emval_handles": count_emval_handles, "craftInvokerFunction": craftInvokerFunction, "createNamedFunction": createNamedFunction, "embind__requireFunction": embind__requireFunction, "embind_init_charCodes": embind_init_charCodes, "ensureOverloadTable": ensureOverloadTable, "exposePublicSymbol": exposePublicSymbol, "extendError": extendError, "floatReadValueFromPointer": floatReadValueFromPointer, "flush_NO_FILESYSTEM": flush_NO_FILESYSTEM, "getShiftFromSize": getShiftFromSize, "getTypeName": getTypeName, "get_first_emval": get_first_emval, "heap32VectorToArray": heap32VectorToArray, "init_emval": init_emval, "integerReadValueFromPointer": integerReadValueFromPointer, "makeLegalFunctionName": makeLegalFunctionName, "new_": new_, "readLatin1String": readLatin1String, "registerType": registerType, "replacePublicSymbol": replacePublicSymbol, "runDestructors": runDestructors, "simpleReadValueFromPointer": simpleReadValueFromPointer, "throwBindingError": throwBindingError, "throwInternalError": throwInternalError, "throwUnboundTypeError": throwUnboundTypeError, "whenDependentTypesAreResolved": whenDependentTypesAreResolved, "DYNAMICTOP_PTR": DYNAMICTOP_PTR, "tempDoublePtr": tempDoublePtr, "ABORT": ABORT, "STACKTOP": STACKTOP, "STACK_MAX": STACK_MAX };
 // EMSCRIPTEN_START_ASM
 var asm = (/** @suppress {uselessCode} */ function(global, env, buffer) {
 'almost asm';
@@ -2808,17 +2814,17 @@ var asm = (/** @suppress {uselessCode} */ function(global, env, buffer) {
   var getTotalMemory=env.getTotalMemory;
   var abortOnCannotGrowMemory=env.abortOnCannotGrowMemory;
   var abortStackOverflow=env.abortStackOverflow;
-  var nullFunc_ddd=env.nullFunc_ddd;
-  var nullFunc_didd=env.nullFunc_didd;
+  var nullFunc_idd=env.nullFunc_idd;
   var nullFunc_ii=env.nullFunc_ii;
+  var nullFunc_iidd=env.nullFunc_iidd;
   var nullFunc_iiii=env.nullFunc_iiii;
   var nullFunc_vi=env.nullFunc_vi;
   var nullFunc_viiii=env.nullFunc_viiii;
   var nullFunc_viiiii=env.nullFunc_viiiii;
   var nullFunc_viiiiii=env.nullFunc_viiiiii;
-  var invoke_ddd=env.invoke_ddd;
-  var invoke_didd=env.invoke_didd;
+  var invoke_idd=env.invoke_idd;
   var invoke_ii=env.invoke_ii;
+  var invoke_iidd=env.invoke_iidd;
   var invoke_iiii=env.invoke_iiii;
   var invoke_vi=env.invoke_vi;
   var invoke_viiii=env.invoke_viiii;
@@ -2848,6 +2854,7 @@ var asm = (/** @suppress {uselessCode} */ function(global, env, buffer) {
   var __emval_register=env.__emval_register;
   var _embind_repr=env._embind_repr;
   var _emscripten_memcpy_big=env._emscripten_memcpy_big;
+  var _multiply_in_js=env._multiply_in_js;
   var count_emval_handles=env.count_emval_handles;
   var craftInvokerFunction=env.craftInvokerFunction;
   var createNamedFunction=env.createNamedFunction;
@@ -2923,15 +2930,15 @@ function getTempRet0() {
 function __Z8multiplyff($0,$1) {
  $0 = +$0;
  $1 = +$1;
- var $2 = 0.0, $3 = 0.0, $4 = 0.0, $5 = 0.0, $6 = 0.0, label = 0, sp = 0;
+ var $2 = 0.0, $3 = 0.0, $4 = 0.0, $5 = 0.0, $6 = 0, label = 0, sp = 0;
  sp = STACKTOP;
  STACKTOP = STACKTOP + 16|0; if ((STACKTOP|0) >= (STACK_MAX|0)) abortStackOverflow(16|0);
  $2 = $0;
  $3 = $1;
  $4 = $2;
  $5 = $3;
- $6 = $4 * $5;
- STACKTOP = sp;return (+$6);
+ $6 = (_multiply_in_js((+$4),(+$5))|0);
+ STACKTOP = sp;return ($6|0);
 }
 function ___cxx_global_var_init() {
  var label = 0, sp = 0;
@@ -2945,10 +2952,10 @@ function __ZN38EmscriptenBindingInitializer_my_moduleC2Ev($0) {
  sp = STACKTOP;
  STACKTOP = STACKTOP + 16|0; if ((STACKTOP|0) >= (STACK_MAX|0)) abortStackOverflow(16|0);
  $1 = $0;
- __ZN10emscripten8functionIfJffEJEEEvPKcPFT_DpT0_EDpT1_(672,22);
+ __ZN10emscripten8functionIiJffEJEEEvPKcPFT_DpT0_EDpT1_(672,22);
  STACKTOP = sp;return;
 }
-function __ZN10emscripten8functionIfJffEJEEEvPKcPFT_DpT0_EDpT1_($0,$1) {
+function __ZN10emscripten8functionIiJffEJEEEvPKcPFT_DpT0_EDpT1_($0,$1) {
  $0 = $0|0;
  $1 = $1|0;
  var $10 = 0, $11 = 0, $12 = 0, $13 = 0, $2 = 0, $3 = 0, $4 = 0, $5 = 0, $6 = 0, $7 = 0, $8 = 0, $9 = 0, label = 0, sp = 0;
@@ -2959,21 +2966,21 @@ function __ZN10emscripten8functionIfJffEJEEEvPKcPFT_DpT0_EDpT1_($0,$1) {
  $4 = $1;
  $6 = 23;
  $7 = $3;
- $8 = (__ZNK10emscripten8internal12WithPoliciesIJEE11ArgTypeListIJfffEE8getCountEv($5)|0);
- $9 = (__ZNK10emscripten8internal12WithPoliciesIJEE11ArgTypeListIJfffEE8getTypesEv($5)|0);
+ $8 = (__ZNK10emscripten8internal12WithPoliciesIJEE11ArgTypeListIJiffEE8getCountEv($5)|0);
+ $9 = (__ZNK10emscripten8internal12WithPoliciesIJEE11ArgTypeListIJiffEE8getTypesEv($5)|0);
  $10 = $6;
  $2 = $10;
- $11 = (__ZN10emscripten8internal19getGenericSignatureIJfiffEEEPKcv()|0);
+ $11 = (__ZN10emscripten8internal19getGenericSignatureIJiiffEEEPKcv()|0);
  $12 = $6;
  $13 = $4;
  __embind_register_function(($7|0),($8|0),($9|0),($11|0),($12|0),($13|0));
  STACKTOP = sp;return;
 }
-function __ZN10emscripten8internal7InvokerIfJffEE6invokeEPFfffEff($0,$1,$2) {
+function __ZN10emscripten8internal7InvokerIiJffEE6invokeEPFiffEff($0,$1,$2) {
  $0 = $0|0;
  $1 = +$1;
  $2 = +$2;
- var $10 = 0.0, $11 = 0.0, $12 = 0.0, $13 = 0.0, $3 = 0, $4 = 0.0, $5 = 0.0, $6 = 0, $7 = 0, $8 = 0.0, $9 = 0.0, label = 0, sp = 0;
+ var $10 = 0.0, $11 = 0.0, $12 = 0, $13 = 0, $3 = 0, $4 = 0.0, $5 = 0.0, $6 = 0, $7 = 0, $8 = 0.0, $9 = 0.0, label = 0, sp = 0;
  sp = STACKTOP;
  STACKTOP = STACKTOP + 16|0; if ((STACKTOP|0) >= (STACK_MAX|0)) abortStackOverflow(16|0);
  $6 = sp;
@@ -2985,12 +2992,12 @@ function __ZN10emscripten8internal7InvokerIfJffEE6invokeEPFfffEff($0,$1,$2) {
  $9 = (+__ZN10emscripten8internal11BindingTypeIfE12fromWireTypeEf($8));
  $10 = $5;
  $11 = (+__ZN10emscripten8internal11BindingTypeIfE12fromWireTypeEf($10));
- $12 = (+FUNCTION_TABLE_ddd[$7 & 31]($9,$11));
- HEAPF32[$6>>2] = $12;
- $13 = (+__ZN10emscripten8internal11BindingTypeIfE10toWireTypeERKf($6));
- STACKTOP = sp;return (+$13);
+ $12 = (FUNCTION_TABLE_idd[$7 & 31]($9,$11)|0);
+ HEAP32[$6>>2] = $12;
+ $13 = (__ZN10emscripten8internal11BindingTypeIiE10toWireTypeERKi($6)|0);
+ STACKTOP = sp;return ($13|0);
 }
-function __ZNK10emscripten8internal12WithPoliciesIJEE11ArgTypeListIJfffEE8getCountEv($0) {
+function __ZNK10emscripten8internal12WithPoliciesIJEE11ArgTypeListIJiffEE8getCountEv($0) {
  $0 = $0|0;
  var $1 = 0, label = 0, sp = 0;
  sp = STACKTOP;
@@ -2998,24 +3005,24 @@ function __ZNK10emscripten8internal12WithPoliciesIJEE11ArgTypeListIJfffEE8getCou
  $1 = $0;
  STACKTOP = sp;return 3;
 }
-function __ZNK10emscripten8internal12WithPoliciesIJEE11ArgTypeListIJfffEE8getTypesEv($0) {
+function __ZNK10emscripten8internal12WithPoliciesIJEE11ArgTypeListIJiffEE8getTypesEv($0) {
  $0 = $0|0;
  var $1 = 0, $2 = 0, label = 0, sp = 0;
  sp = STACKTOP;
  STACKTOP = STACKTOP + 16|0; if ((STACKTOP|0) >= (STACK_MAX|0)) abortStackOverflow(16|0);
  $1 = $0;
- $2 = (__ZN10emscripten8internal14ArgArrayGetterINS0_8TypeListIJfffEEEE3getEv()|0);
+ $2 = (__ZN10emscripten8internal14ArgArrayGetterINS0_8TypeListIJiffEEEE3getEv()|0);
  STACKTOP = sp;return ($2|0);
 }
-function __ZN10emscripten8internal11BindingTypeIfE10toWireTypeERKf($0) {
+function __ZN10emscripten8internal11BindingTypeIiE10toWireTypeERKi($0) {
  $0 = $0|0;
- var $1 = 0, $2 = 0, $3 = 0.0, label = 0, sp = 0;
+ var $1 = 0, $2 = 0, $3 = 0, label = 0, sp = 0;
  sp = STACKTOP;
  STACKTOP = STACKTOP + 16|0; if ((STACKTOP|0) >= (STACK_MAX|0)) abortStackOverflow(16|0);
  $1 = $0;
  $2 = $1;
- $3 = +HEAPF32[$2>>2];
- STACKTOP = sp;return (+$3);
+ $3 = HEAP32[$2>>2]|0;
+ STACKTOP = sp;return ($3|0);
 }
 function __ZN10emscripten8internal11BindingTypeIfE12fromWireTypeEf($0) {
  $0 = +$0;
@@ -3026,17 +3033,17 @@ function __ZN10emscripten8internal11BindingTypeIfE12fromWireTypeEf($0) {
  $2 = $1;
  STACKTOP = sp;return (+$2);
 }
-function __ZN10emscripten8internal14ArgArrayGetterINS0_8TypeListIJfffEEEE3getEv() {
+function __ZN10emscripten8internal14ArgArrayGetterINS0_8TypeListIJiffEEEE3getEv() {
  var label = 0, sp = 0;
  sp = STACKTOP;
  return (384|0);
 }
-function __ZN10emscripten8internal19getGenericSignatureIJfiffEEEPKcv() {
+function __ZN10emscripten8internal19getGenericSignatureIJiiffEEEPKcv() {
  var label = 0, sp = 0;
  sp = STACKTOP;
  return (681|0);
 }
-function __GLOBAL__sub_I_multiply_cpp() {
+function __GLOBAL__sub_I_multiplyV2_cpp() {
  var label = 0, sp = 0;
  sp = STACKTOP;
  ___cxx_global_var_init();
@@ -8028,17 +8035,10 @@ function _sbrk(increment) {
 }
 
   
-function dynCall_ddd(index,a1,a2) {
+function dynCall_idd(index,a1,a2) {
   index = index|0;
   a1=+a1; a2=+a2;
-  return +FUNCTION_TABLE_ddd[index&31](+a1,+a2);
-}
-
-
-function dynCall_didd(index,a1,a2,a3) {
-  index = index|0;
-  a1=a1|0; a2=+a2; a3=+a3;
-  return +FUNCTION_TABLE_didd[index&31](a1|0,+a2,+a3);
+  return FUNCTION_TABLE_idd[index&31](+a1,+a2)|0;
 }
 
 
@@ -8046,6 +8046,13 @@ function dynCall_ii(index,a1) {
   index = index|0;
   a1=a1|0;
   return FUNCTION_TABLE_ii[index&1](a1|0)|0;
+}
+
+
+function dynCall_iidd(index,a1,a2,a3) {
+  index = index|0;
+  a1=a1|0; a2=+a2; a3=+a3;
+  return FUNCTION_TABLE_iidd[index&31](a1|0,+a2,+a3)|0;
 }
 
 
@@ -8084,13 +8091,13 @@ function dynCall_viiiiii(index,a1,a2,a3,a4,a5,a6) {
 }
 
 function b0(p0,p1) {
- p0 = +p0;p1 = +p1; nullFunc_ddd(0);return +0;
+ p0 = +p0;p1 = +p1; nullFunc_idd(0);return 0;
 }
-function b1(p0,p1,p2) {
- p0 = p0|0;p1 = +p1;p2 = +p2; nullFunc_didd(1);return +0;
+function b1(p0) {
+ p0 = p0|0; nullFunc_ii(1);return 0;
 }
-function b2(p0) {
- p0 = p0|0; nullFunc_ii(2);return 0;
+function b2(p0,p1,p2) {
+ p0 = p0|0;p1 = +p1;p2 = +p2; nullFunc_iidd(2);return 0;
 }
 function b3(p0,p1,p2) {
  p0 = p0|0;p1 = p1|0;p2 = p2|0; nullFunc_iiii(3);return 0;
@@ -8109,11 +8116,11 @@ function b7(p0,p1,p2,p3,p4,p5) {
 }
 
 // EMSCRIPTEN_END_FUNCS
-var FUNCTION_TABLE_ddd = [b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,__Z8multiplyff,b0,b0,b0,b0,b0,b0
+var FUNCTION_TABLE_idd = [b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,b0,__Z8multiplyff,b0,b0,b0,b0,b0,b0
 ,b0,b0,b0];
-var FUNCTION_TABLE_didd = [b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,b1,__ZN10emscripten8internal7InvokerIfJffEE6invokeEPFfffEff,b1,b1,b1,b1,b1
-,b1,b1,b1];
-var FUNCTION_TABLE_ii = [b2,___stdio_close];
+var FUNCTION_TABLE_ii = [b1,___stdio_close];
+var FUNCTION_TABLE_iidd = [b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,b2,__ZN10emscripten8internal7InvokerIiJffEE6invokeEPFiffEff,b2,b2,b2,b2,b2
+,b2,b2,b2];
 var FUNCTION_TABLE_iiii = [b3,b3,___stdout_write,___stdio_seek,b3,b3,b3,b3,__ZNK10__cxxabiv117__class_type_info9can_catchEPKNS_16__shim_type_infoERPv,b3,b3,b3,b3,b3,b3,b3,b3,__ZNK10__cxxabiv123__fundamental_type_info9can_catchEPKNS_16__shim_type_infoERPv,b3,b3,b3,b3,b3,b3,___stdio_write,b3,b3,b3,b3
 ,b3,b3,b3];
 var FUNCTION_TABLE_vi = [b4,b4,b4,b4,__ZN10__cxxabiv116__shim_type_infoD2Ev,__ZN10__cxxabiv117__class_type_infoD0Ev,__ZNK10__cxxabiv116__shim_type_info5noop1Ev,__ZNK10__cxxabiv116__shim_type_info5noop2Ev,b4,b4,b4,b4,__ZN10__cxxabiv120__si_class_type_infoD0Ev,b4,b4,b4,__ZN10__cxxabiv123__fundamental_type_infoD0Ev,b4,__ZN10__cxxabiv121__vmi_class_type_infoD0Ev,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4
@@ -8125,7 +8132,7 @@ var FUNCTION_TABLE_viiiii = [b6,b6,b6,b6,b6,b6,b6,b6,b6,b6,__ZNK10__cxxabiv117__
 var FUNCTION_TABLE_viiiiii = [b7,b7,b7,b7,b7,b7,b7,b7,b7,__ZNK10__cxxabiv117__class_type_info16search_above_dstEPNS_19__dynamic_cast_infoEPKvS4_ib,b7,b7,b7,__ZNK10__cxxabiv120__si_class_type_info16search_above_dstEPNS_19__dynamic_cast_infoEPKvS4_ib,b7,b7,b7,b7,b7,__ZNK10__cxxabiv121__vmi_class_type_info16search_above_dstEPNS_19__dynamic_cast_infoEPKvS4_ib,b7,b7,b7,b7,b7,b7,b7,b7,b7
 ,b7,b7,b7];
 
-  return { __GLOBAL__sub_I_bind_cpp: __GLOBAL__sub_I_bind_cpp, __GLOBAL__sub_I_multiply_cpp: __GLOBAL__sub_I_multiply_cpp, ___errno_location: ___errno_location, ___getTypeName: ___getTypeName, _fflush: _fflush, _free: _free, _malloc: _malloc, _memcpy: _memcpy, _memset: _memset, _sbrk: _sbrk, dynCall_ddd: dynCall_ddd, dynCall_didd: dynCall_didd, dynCall_ii: dynCall_ii, dynCall_iiii: dynCall_iiii, dynCall_vi: dynCall_vi, dynCall_viiii: dynCall_viiii, dynCall_viiiii: dynCall_viiiii, dynCall_viiiiii: dynCall_viiiiii, establishStackSpace: establishStackSpace, getTempRet0: getTempRet0, runPostSets: runPostSets, setTempRet0: setTempRet0, setThrew: setThrew, stackAlloc: stackAlloc, stackRestore: stackRestore, stackSave: stackSave };
+  return { __GLOBAL__sub_I_bind_cpp: __GLOBAL__sub_I_bind_cpp, __GLOBAL__sub_I_multiplyV2_cpp: __GLOBAL__sub_I_multiplyV2_cpp, ___errno_location: ___errno_location, ___getTypeName: ___getTypeName, _fflush: _fflush, _free: _free, _malloc: _malloc, _memcpy: _memcpy, _memset: _memset, _sbrk: _sbrk, dynCall_idd: dynCall_idd, dynCall_ii: dynCall_ii, dynCall_iidd: dynCall_iidd, dynCall_iiii: dynCall_iiii, dynCall_vi: dynCall_vi, dynCall_viiii: dynCall_viiii, dynCall_viiiii: dynCall_viiiii, dynCall_viiiiii: dynCall_viiiiii, establishStackSpace: establishStackSpace, getTempRet0: getTempRet0, runPostSets: runPostSets, setTempRet0: setTempRet0, setThrew: setThrew, stackAlloc: stackAlloc, stackRestore: stackRestore, stackSave: stackSave };
 })
 // EMSCRIPTEN_END_ASM
 (Module.asmGlobalArg, Module.asmLibraryArg, buffer);
@@ -8136,10 +8143,10 @@ var real___GLOBAL__sub_I_bind_cpp = asm["__GLOBAL__sub_I_bind_cpp"]; asm["__GLOB
   return real___GLOBAL__sub_I_bind_cpp.apply(null, arguments);
 };
 
-var real___GLOBAL__sub_I_multiply_cpp = asm["__GLOBAL__sub_I_multiply_cpp"]; asm["__GLOBAL__sub_I_multiply_cpp"] = function() {
+var real___GLOBAL__sub_I_multiplyV2_cpp = asm["__GLOBAL__sub_I_multiplyV2_cpp"]; asm["__GLOBAL__sub_I_multiplyV2_cpp"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
-  return real___GLOBAL__sub_I_multiply_cpp.apply(null, arguments);
+  return real___GLOBAL__sub_I_multiplyV2_cpp.apply(null, arguments);
 };
 
 var real____errno_location = asm["___errno_location"]; asm["___errno_location"] = function() {
@@ -8220,7 +8227,7 @@ var real_stackSave = asm["stackSave"]; asm["stackSave"] = function() {
   return real_stackSave.apply(null, arguments);
 };
 var __GLOBAL__sub_I_bind_cpp = Module["__GLOBAL__sub_I_bind_cpp"] = asm["__GLOBAL__sub_I_bind_cpp"];
-var __GLOBAL__sub_I_multiply_cpp = Module["__GLOBAL__sub_I_multiply_cpp"] = asm["__GLOBAL__sub_I_multiply_cpp"];
+var __GLOBAL__sub_I_multiplyV2_cpp = Module["__GLOBAL__sub_I_multiplyV2_cpp"] = asm["__GLOBAL__sub_I_multiplyV2_cpp"];
 var ___errno_location = Module["___errno_location"] = asm["___errno_location"];
 var ___getTypeName = Module["___getTypeName"] = asm["___getTypeName"];
 var _fflush = Module["_fflush"] = asm["_fflush"];
@@ -8237,9 +8244,9 @@ var setThrew = Module["setThrew"] = asm["setThrew"];
 var stackAlloc = Module["stackAlloc"] = asm["stackAlloc"];
 var stackRestore = Module["stackRestore"] = asm["stackRestore"];
 var stackSave = Module["stackSave"] = asm["stackSave"];
-var dynCall_ddd = Module["dynCall_ddd"] = asm["dynCall_ddd"];
-var dynCall_didd = Module["dynCall_didd"] = asm["dynCall_didd"];
+var dynCall_idd = Module["dynCall_idd"] = asm["dynCall_idd"];
 var dynCall_ii = Module["dynCall_ii"] = asm["dynCall_ii"];
+var dynCall_iidd = Module["dynCall_iidd"] = asm["dynCall_iidd"];
 var dynCall_iiii = Module["dynCall_iiii"] = asm["dynCall_iiii"];
 var dynCall_vi = Module["dynCall_vi"] = asm["dynCall_vi"];
 var dynCall_viiii = Module["dynCall_viiii"] = asm["dynCall_viiii"];
