@@ -1,14 +1,15 @@
 <!doctype html>
 <html>
-<textarea id="output_area" style="width:100%; height:50%">Click the button</textarea>
-<button onclick="output(event)" style="width:100%; height:50%">Click to see mouse position</button>
-<script src="multiply.js"></script>
-<script>
-function output(event) {
-    var sX = event.screenX;
-    var sY = event.screenY;
-    var coords = "screen - X: " + sX + ", Y coords: " + sY;
-    document.getElementById("output_area").innerHTML = "For coordinates " + coords + "multiplied=" + Module.multiply(sX,sY);
+<textarea id="output_area" style="width:100%; height:300px"></textarea>
+<button id="get_result" onclick="output(event)" style="width:100%; height:300px">Click to see mouse position</button>
+<script src="multiplyV2.js"></script>
+<script >
+function output(event){
+	var x = event.clientX;
+   	var y = event.clientY;
+	var result=Module.multiply(x,y);
+	var text=document.getElementById("output_area").innerHTML;
+    document.getElementById("output_area").innerHTML = text + Module.multiply(x,y);
 }
 </script>
 </html>
